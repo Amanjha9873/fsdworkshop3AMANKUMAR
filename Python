@@ -1,0 +1,220 @@
+# print("Hello world!" , "aman bhai")
+# print('Hello world!') 
+
+# name = "Aman Kumar"
+# age = 19
+# name = 'ayush'
+# cgpa = 8.00
+# isstudent = True
+# print(name , age)  
+# print(type(name) , type(age))
+# print(type(cgpa))
+# print(type(isstudent))
+# name = input('Enter your name: ')
+# print('Hello' , name)
+# print('Hello ' + name)  # concatenation
+# Practice exercise 1
+#name1 = 'Tony'
+# name2 = 'Stark'
+# print(name1 + ' ' + name2)
+# age = 53
+# height = 1.85
+# print(age , " " , height)
+# superheroname = input('Enter your superhero name: ')
+# print(superheroname)
+# typecasting
+#age = input('Enter your age: ')
+# print(type(age) + 1)
+#new_age = int(age) + 1
+#print(new_age)
+#print(float(new_age)) #  bool() str()
+ #type conversion
+ # print(1+ 2.5)
+# sum program
+#a = int(input('Enter first number: '))
+#b = int(input('Enter your second number: '))
+#sum = a+b
+#print("sum: " , sum)
+# string
+# name = "Aman Kumar"
+# Grade = 'A'
+# print(name.upper())
+# print(name)
+# print(name.lower())
+#find
+#print(name.find("ar")) # 0 index , position
+# replace
+#print(name.replace("Aman Kumar" , "Tony Stark"))
+# check for presence
+#print('A' in name) #true
+# Practice exercise 2
+# item1 = float(input('Enter your first item: '))
+# item2 = float(input('Enter your second item: '))
+# item3 = float(input('Enter your third item: '))
+# total = item1 + item2 + item3
+# print('total bill Amount: ' , total)
+# average= float(total/3)
+# print('average amount: ', average)
+#question 2
+# name = str(input('Enter Your Superhero Name: '))
+# print('S' in name , 's' in name)
+# arithmetic operators
+# print(a+b)
+# print(a-b)
+# print(a*b)
+# print(a / b)
+# print(a//b)
+# print(a % b) # modulo operator gives remainder
+# print(a ** b) # power operator
+# assignment operator
+# x = 1
+# x = x+1
+# x += 1
+#print(x)
+# operator precedance  ()>*,/>+-
+# comparison operator 
+# > ,< ,>= , <= , == , !=
+#print (2!=2)
+# logical operator
+# and , or , not
+#print(2>1 or 3<2)
+#print(2>1 and 3<2)
+#print(not(2>1))
+# conditional statements
+# if , elif , else
+# indentation is very important in python
+# age = 24
+
+# if age>=18:
+#     print('you are an adult and also you can drive and vote')
+
+# elif age<18:
+#     print('you are a minor and you cannot drive and vote')   
+
+# print('end of code')     
+# marks = int(input('Enter your marks: '))
+# if marks >= 80:
+#     print('A')
+# elif marks <= 70 and marks > 60 :
+#     print('b')
+# elif marks <=60 and marks >= 50:
+#     print('C')    
+# else :
+#     print('you are fail')
+# print('end results are declared') 
+
+# calculator     
+# a = float(input('Enter your first number: '))
+# b = float(input('Enter your second number: '))
+# op = input('enter your operator(+,-,*,%,**,/): ')
+# if op=='+':
+#     print(a+b)
+# elif op=='-':
+#     print(a-b)
+# elif op=='*':
+#     print(a*b)
+# elif op=='%':
+#     print(a%b)
+# elif op=='**':
+#     print(a**b)
+# elif op=='/':
+#     print(a/b)
+# else: 
+#     print('invalid')
+    # range
+# range(6) = [0,1,2,3,4,5]
+# range(n) = [0 to n]
+# 1 to 5
+ # range(1,6)=[1,2,3,4,5]  
+ # range(start , stop , step) 
+#loops 
+# counter = 1
+# while counter <= 5:
+#     print('APNA COLLEGE')
+#     counter +=1
+# print('end of code')
+# i = 1
+# while i <= 5:
+#     print(i * '*')
+#     i +=1
+# print('end of code')
+# i = 5
+# while i > 0:
+#     print(i * '*')
+#     i -=1
+# print('end of code')
+# for loop
+# 0 to 5
+# for i in range(6):
+#     print(i)
+    # 1 to 5
+# for i in range(1, 6)
+#      print(i)
+# 1 to 10 even no.s 
+# for i in range(1,11):
+#     if i%2 == 0:
+#         print(i)
+# for i in range(2,11,2):
+#     print(i)
+# print all the multiples of 3 till 50 except 21
+# for i in range(3,51):
+#     if i==21:
+#         print('out of loop')
+#         pass
+#     elif i%3 ==0:
+#         print(i)
+# list - mutable , ordered , allows duplicate elements
+# marks = [45, 67, 89, 90, 100 , 'A',99.56]
+# print(marks)
+# print(type(marks))
+# print(len(marks)) #length of list
+# print(marks[0]) # indexing
+# print(marks[-1]) # last element
+# # slicing a list list[st:end]
+# print(marks[-4:])
+# for i in marks:
+#     print(i)
+# marks.append(100)
+# marks.insert(0, 2.34)
+# print(marks)
+# print(89 in marks) # check for presence
+# marks.clear()
+# print(marks , len(marks)
+# tuple - immutable , ordered , allows duplicate elements
+# marks = (45, 67,90,90, 89, 90, 100 , 'A',99.56)
+# print(marks , type(marks))
+# print(marks[2])
+# print(marks.count(90))
+# print(marks.index(100))
+# set - mutable , unordered , does not allow duplicate elements
+# marks = {45, 67, 89, 89, 90, 90}
+# print(marks , type(marks))
+# print(len(marks))
+# for mark in marks:
+#     print(mark)
+# Dictionary - mutable , unordered , does not allow duplicate keys {key:value}
+# marks={ 'maths': 99, 'english': 89, 'science': 90, 'social': 100}
+# print(marks , type(marks))
+# marks['science']=95
+# print(marks['science'])
+#for key in marks:
+  #  print(key , marks[key])
+# functions - block of code which performs a specific task
+# 2 no. sum
+#function define
+# def sum(a,b):
+#     print(a+b)
+# sum(5,7) # function call
+# def calc_gst(price): # parameter
+#     newprice = price + price*0.18
+#     return newprice
+# calc_gst(100) # arguments
+# print(calc_gst(2345))
+# module functions - pre defined functions
+# import math 
+#print(dir(math))
+# from math import sqrt, log2
+# print(log2(16))
+#import random
+# print(random.random()) # 0 to 1 not 1
+# print(random.randint(1,12)) # 1 to 12
