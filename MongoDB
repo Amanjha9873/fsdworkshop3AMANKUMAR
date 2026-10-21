@@ -1,0 +1,35 @@
+
+db.employees.insertOne({
+  empId: "EMP001",
+  name: "Aarav Sharma",
+  role: "Backend Engineer",
+  age: 26,
+  salary: 75000,
+  skills: ["Node.js", "MongoDB", "Express"],
+  status: "Active",
+  joiningDate: new Date("2024-03-15")
+});
+db.employees.insertMany([
+  { empId: "EMP002", name: "Priya Patel", role: "Frontend Engineer", age: 24, salary: 68000, skills: ["React", "JavaScript", "CSS"], status: "Active", joiningDate: new Date("2025-01-10") },
+  { empId: "EMP003", name: "Rohan Verma", role: "DevOps Engineer", age: 31, salary: 95000, skills: ["Docker", "AWS", "Kubernetes"], status: "Active", joiningDate: new Date("2023-06-20") },
+  { empId: "EMP004", name: "Sneha Reddy", role: "Backend Engineer", age: 29, salary: 82000, skills: ["Python", "Django", "PostgreSQL"], status: "Inactive", joiningDate: new Date("2022-11-05") },
+  { empId: "EMP005", name: "Amit Singh", role: "Data Scientist", age: 28, salary: 110000, skills: ["Python", "SQL", "TensorFlow"], status: "Active", joiningDate: new Date("2024-08-12") }
+]);
+Sabhi documents dekhna
+db.employees.find();
+db.employees.find({ age: { $gt: 25 } });
+db.employees.updateMany(
+  { status: "Active" },
+  { $inc: { salary: 5000 } } // $inc se value badhti hai
+);
+db.employees.find({
+  $and: [
+    { status: "Active" },
+    { age: { $gte: 25, $lte: 35 } },
+    { skills: { $in: ["Python", "Node.js"] } }
+  ]
+});
+db.employees.find(
+  { status: "Active" }, 
+  { name: 1, role: 1, salary: 1, _id: 0 }
+);
